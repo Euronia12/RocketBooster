@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 
 public class AchievementSlot : MonoBehaviour
@@ -20,5 +21,6 @@ public class AchievementSlot : MonoBehaviour
     {
         checkMark.SetActive(true);
         isUnlocked = true;
+        Debug.Log($"{titleTxt.text} Clear!!");
     }
 }

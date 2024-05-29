@@ -20,7 +20,7 @@
                     "id": "813ed9d5-26d9-4acc-8fcb-1a67a6d6367b",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "MultiTap",
                     "initialStateCheck": true
                 }
             ],
@@ -84,7 +84,7 @@
                     "name": "",
                     "id": "d53d14f5-728b-4854-b083-8afde9c4fb66",
                     "path": "<Keyboard>/space",
-                    "interactions": "",
+                    "interactions": "MultiTap",
                     "processors": "",
                     "groups": "",
                     "action": "Boost",

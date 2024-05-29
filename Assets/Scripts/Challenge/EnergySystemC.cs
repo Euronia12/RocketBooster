@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class EnergySystemC : MonoBehaviour
 {
-    public event Action<float> OnEnergyChanged;
+    public event Action OnEnergyChanged;
+
     public float MaxFuel { get; private set; } = 10f;
     public float Fuel { get; private set; } = 10f;
     
@@ -16,7 +17,10 @@ public class EnergySystemC : MonoBehaviour
 
     private void Update()
     {
-        Fuel += Time.deltaTime;
-        OnEnergyChanged?.Invoke(Fuel);
+        if (Fuel < MaxFuel)
+            Fuel += Time.deltaTime;
+        else
+            Fuel = MaxFuel;
+        OnEnergyChanged?.Invoke();
     }
 }
